@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab">
+        <item>网贷</item>
+        <item>保险</item>
+    </string-array>
+    <string-array name="bxtab">
+        <item>重疾险</item>
+        <item>医疗险</item>
+        <item>意外险</item>
+        <item>年金寿险</item>
+    </string-array>
+</resources>

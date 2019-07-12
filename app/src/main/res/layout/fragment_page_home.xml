@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homepage_swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#118fbc8f">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@color/colorPrimary">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    app:indicator_margin="6dp"
+                    app:indicator_width="18dp"
+                    app:indicator_height="1.5dp"
+                    app:indicator_drawable_selected="@drawable/indicatorselect"
+                    app:indicator_drawable_unselected="@drawable/indicatorunselect"/>
+
+
+                <ImageView
+                    android:id="@+id/addscan"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="50dp"
+                    android:src="@drawable/add"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/fw"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/service_icon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="· 支付助手：￥2000.00付款成功"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:maxLines="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"
+                    android:text="1小时前"
+                    android:maxLines="1"
+                    android:textSize="12dp"
+                    android:textColor="#ccc"/>
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/goin"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/theme_btn_sign"
+                        android:gravity="center"
+                        android:text="本息保障"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/theme_btn_sign"
+                        android:gravity="center"
+                        android:text="每日计息"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/theme_btn_sign"
+                        android:gravity="center"
+                        android:text="高额收益"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/consume_pie_chart"
+                    android:layout_width="250dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="250dp"
+                    >
+                </com.github.mikephil.charting.charts.PieChart>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:text="预期年利率：7.80% (历史)"
+                    android:textSize="14sp" />
+
+                <Button
+                    style="@style/theme_color_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="30dp"
+                    android:text="立即加入"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/safe_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="风险保障全由上海银行监管"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/knowus"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="了解我们"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/ljcj"/>
+                        <TextView
+                            android:id="@+id/tv_ljcj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="累计成交"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="75dp"
+                            android:textSize="12sp"
+                            android:textColor="#ccc"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="75dp"
+                            android:layout_below="@+id/tv_ljcj"
+                            android:text="474亿1222万"/>
+                    </RelativeLayout>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/fengeline"/>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/usernum"/>
+                        <TextView
+                            android:id="@+id/tv_usernum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="用户人数"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="75dp"
+                            android:textSize="12sp"
+                            android:textColor="#ccc"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="75dp"
+                            android:layout_below="@+id/tv_usernum"
+                            android:text="185万9798人"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/knowus_selector"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/gdsl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="股东实力"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/colorPrimary"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/gdsl"
+                            android:text="Shareholder"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="12sp"
+                            android:textColor="#448fbc8f"/>
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="80dp"
+                            android:src="@drawable/know_sl"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/knowus_selector"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/safe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="安全保障"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/colorPrimary"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/safe"
+                            android:text="Safeguard"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="12sp"
+                            android:textColor="#448fbc8f"/>
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="80dp"
+                            android:src="@drawable/know_safe"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/knowus_selector"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/xxpl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="信息披露"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/colorPrimary"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/xxpl"
+                            android:text="Info. Disciosure"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="12sp"
+                            android:textColor="#448fbc8f"/>
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="80dp"
+                            android:src="@drawable/know_information"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/knowus_selector"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/fkxx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="风控信息"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/colorPrimary"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/fkxx"
+                            android:text="Risk Control"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="12sp"
+                            android:textColor="#448fbc8f"/>
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="80dp"
+                            android:src="@drawable/know_fk"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#118fbc8f"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="1px"
+                    android:background="@color/colorPrimary"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我可是有底线的"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="1px"
+                    android:background="@color/colorPrimary"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>
+

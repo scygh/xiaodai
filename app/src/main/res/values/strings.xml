@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">小呆</string>
+    <string name="shouye">首页</string>
+    <string name="newscenter">投资</string>
+    <string name="smartservice">我的资产</string>
+    <string name="zw">更多</string>
+    <string name="set">设置</string>
+    <string name="title_activity_splash">SplashActivity</string>
+</resources>

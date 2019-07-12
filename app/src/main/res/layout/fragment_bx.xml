@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.TabLayout
+        android:id="@+id/bx_tablayout"
+        app:tabBackground="@color/white"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextAppearance="@style/tab_text_size"
+        app:tabTextColor="@color/gray"
+        app:tabIndicatorColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        app:tabIndicatorFullWidth="false"
+        android:paddingTop="20dp"
+        android:layout_height="60dp" />
+    <com.scy.android.xiaodai.view.fragment.NoScrollViewpager
+        android:id="@+id/bx_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.scy.android.xiaodai.view.fragment.NoScrollViewpager>
+
+
+</LinearLayout>

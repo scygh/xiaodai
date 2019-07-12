@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="8dp"
+    >
+
+
+    <ImageView
+        android:id="@+id/bx_item_img"
+        android:layout_width="120dp"
+        android:layout_margin="10dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bx_1" />
+
+        <TextView
+            android:id="@+id/bx_item_tvtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="健康保2.0重大疾病保险"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/bx_item_img"
+            android:layout_margin="10dp"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/bx_item_tvdes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重/中/轻/特疾/豁免多保障|高性价比|智核/人核仅支持H5端"
+            android:textColor="@color/grey"
+            android:layout_toRightOf="@+id/bx_item_img"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="10sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/bx_item_img"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="20dp">
+        <TextView
+            android:id="@+id/bx_item_price1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/bx_item_price2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2767"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/bx_item_price3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="起"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="290dp"
+            android:text="购买"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:background="@drawable/buy_button_selector"
+            />
+
+
+</RelativeLayout>
